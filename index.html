@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MRCHL Labs</title>
+  <meta name="description" content="MRCHL Labs builds small AI intelligence products using automation, public data and real-world workflows." />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b0d12;
+      color: #f5f5f0;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 96px;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      font-size: 22px;
+    }
+    nav a {
+      color: #b8b8aa;
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .hero {
+      max-width: 760px;
+      margin-bottom: 96px;
+    }
+    .eyebrow {
+      color: #9be7c2;
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      margin: 0 0 28px;
+    }
+    h2 {
+      font-size: 34px;
+      letter-spacing: -0.04em;
+      margin: 0 0 24px;
+    }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+    }
+    p {
+      color: #c8c8bd;
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
+    .hero p {
+      font-size: 22px;
+      max-width: 680px;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 18px;
+      border: 1px solid #f5f5f0;
+      color: #0b0d12;
+      background: #f5f5f0;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      margin-bottom: 88px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid #262a34;
+      background: #11141b;
+      border-radius: 20px;
+      padding: 24px;
+    }
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      color: #9be7c2;
+      font-size: 14px;
+    }
+    .philosophy {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      border: 1px solid #303542;
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: #d8d8cf;
+      background: #11141b;
+      font-size: 15px;
+    }
+    footer {
+      border-top: 1px solid #262a34;
+      padding-top: 28px;
+      color: #8f9188;
+      font-size: 14px;
+    }
+    a {
+      color: #f5f5f0;
+    }
+    @media (max-width: 720px) {
+      header {
+        display: block;
+        margin-bottom: 72px;
+      }
+      nav {
+        margin-top: 16px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 18px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="logo">MRCHL Labs</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="mailto:smarechal@gmail.com">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">AI intelligence products</div>
+      <h1>Turn scattered data into useful decisions.</h1>
+      <p>
+        MRCHL Labs builds small AI-native products and automations that transform public data,
+        internal knowledge and real-world workflows into actionable intelligence.
+      </p>
+      <a class="cta" href="mailto:smarechal@gmail.com">Contact MRCHL Labs</a>
+    </section>
+
+    <section id="projects">
+      <h2>Current experiments</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Friday</h3>
+          <p>
+            An AI work ledger that captures invisible work, builds organisational memory
+            and helps professionals demonstrate contribution.
+          </p>
+          <span class="status">Private beta</span>
+        </div>
+
+        <div class="card">
+          <h3>Account Signal Radar</h3>
+          <p>
+            Public signal monitoring for strategic accounts: job postings, leadership changes,
+            launches, partnerships, procurement activity and market movements.
+          </p>
+          <span class="status">Research phase</span>
+        </div>
+
+        <div class="card">
+          <h3>Karapace</h3>
+          <p>
+            A Type 1 Diabetes night safety device using ESP32 and Apple HomeKit to trigger
+            lights and alarms during severe night lows.
+          </p>
+          <span class="status">Functional MVP</span>
+        </div>
+
+        <div class="card">
+          <h3>DashCare</h3>
+          <p>
+            A simple inventory app for Type 1 Diabetes supplies, helping families track insulin,
+            Dexcom sensors, Omnipod pods and reorder needs.
+          </p>
+          <span class="status">TestFlight-ready MVP</span>
+        </div>
+
+        <div class="card">
+          <h3>Property Risk Radar</h3>
+          <p>
+            Planning applications, regulations, local developments and market signals for
+            property buyers, owners and sellers.
+          </p>
+          <span class="status">Concept</span>
+        </div>
+
+        <div class="card">
+          <h3>MRCHL AI Studio</h3>
+          <p>
+            A portfolio of micro-products and AI-native services built around automation,
+            public data, business workflows and practical decision support.
+          </p>
+          <span class="status">Studio platform</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Philosophy</h2>
+      <div class="philosophy">
+        <span class="pill">Small teams</span>
+        <span class="pill">AI-native workflows</span>
+        <span class="pill">Rapid experimentation</span>
+        <span class="pill">Real-world problems</span>
+        <span class="pill">Useful products</span>
+        <span class="pill">No hype</span>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        MRCHL Labs is run by Sebastien Marechal. I build and test AI-native products at the
+        intersection of automation, intelligence and operational workflows.
+      </p>
+      <p>
+        Current focus areas include work intelligence, strategic account monitoring,
+        Type 1 Diabetes safety tools and public-data-driven decision support.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 MRCHL Labs · <a href="mailto:smarechal@gmail.com">smarechal@gmail.com</a>
+    </footer>
+  </main>
+</body>
+</html>
