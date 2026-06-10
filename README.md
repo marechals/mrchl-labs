@@ -1,36 +1,24 @@
 # MRCHL Labs
 
-Static HTML and CSS site for `mrchl.com`, including the home page, `/projects/`, and `404.html`.
+MRCHL Labs is a static website for the studio's public homepage and projects page.
 
-## Deploy on the Mac mini with Docker
+## Static site
 
-The nginx container should serve this repository directly from `/usr/share/nginx/html`.
+- Plain HTML and CSS only
+- No framework
+- No build step
+- No JavaScript dependencies
 
-1. Clone or update this repo on the Mac mini.
-2. From the repo root, start nginx with the site mounted read-only:
+## Deployment
 
-```sh
-docker run -d \
-  --name mrchl-labs \
-  --restart unless-stopped \
-  -p 80:80 \
-  -v "$PWD":/usr/share/nginx/html:ro \
-  nginx:alpine
-```
+The site is deployed from:
 
-3. Open `http://<mac-mini-ip>/`.
+`/mnt/stockage/docker/mrchl-labs`
 
-## Updating the site
+It is intended to be served by an nginx Docker container mounting this directory as the web root.
 
-1. Pull the latest changes into this directory.
-2. Restart the container:
+## Update workflow
 
 ```sh
-docker restart mrchl-labs
+git pull origin main
 ```
-
-## Notes
-
-- The site is fully static: plain HTML and CSS only.
-- `/projects/` is served from `projects/index.html`.
-- The login form is intentionally non-functional and posts to `/session`, which lets nginx return the static `404.html` page.
